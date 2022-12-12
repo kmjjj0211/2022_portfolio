@@ -168,5 +168,5 @@ for(let k=0; k<detail_clear.length;k++){
 
 
   const windowOpen = () => {
-    // window.open("https://mijin970211.github.io/2022_katalk_clone/","KA_TALK","width=375,height=812,fullscreen=no,resizable=yes")
+    window.open("https://kmjjj0211.github.io/2022_katalk_clone/","KA_TALK","width=375,height=812,fullscreen=no,resizable=yes")
   }
