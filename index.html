@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+<title>MIJIN's portfolio</title>
+<link rel="stylesheet" href="css/main.css">
+<script defer src="js/main.js"></script>
+<script src="https://kit.fontawesome.com/5f8c5b64dd.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenMax.min.js"></script>
+</head>
+<body> 
+<!-- 마우스커서 -->
+<!-- <div class="circle">
+    <div class="circle_line"></div>
+</div>    -->
+<!-- loading -->
+<div class="load">
+    <div class="load2">
+        <p>HELLO I'M MIJIN</p>
+    </div>
+    <div class="load1">
+        <div class="loading_text">
+        <div class="loading_text1">L</div>
+        <div class="loading_text2">O</div>
+        <div class="loading_text3">A</div>
+        <div class="loading_text4">D</div>
+        <div class="loading_text5">I</div>
+        <div class="loading_text6">N</div>
+        <div class="loading_text7">G</div>
+        <div class="loading_bar"></div>
+    </div>
+    </div>
+</div>
+<!-- //loading -->
+
+<!-- header -->
+<header id="header">
+    <div class="header_text">PORTFOLIO</div>
+    <div class="header_icon">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+</header>
+<!-- //header -->
+
+<!-- nav -->
+<nav class="gnb">
+    <div class="gnb_clear">
+        <i class="fa-solid fa-xmark"></i>
+    </div>
+    <ul>
+    <li class="gnb_list"><a href="#">ABOUT ME</a></li>
+    <li class="gnb_list"><a href="#">LG ELECTRONICS</a></li>
+    <li class="gnb_list"><a href="#">SAMSUNG ELECTRO-MECHANICS</a></li>
+    <li class="gnb_list"><a href="#">CJ ONE</a></li>
+    <li class="gnb_list"><a href="#">KA-TALK</a></li>
+    <li class="gnb_list"><a href="#">NEXFLIX</a></li>
+    <li class="gnb_list"><a href="#">PURE CSS</a></li>
+    <li class="gnb_list"><a href="#">CONTACT</a></li>
+    </ul>
+</nav>
+<!-- //nav -->
+
+<!-- main -->
+<div class="main content">
+    <section>
+        <div class="main_bg"></div>
+        <div class="main_text">
+            <span class="main_text1">FRONT-END</span>
+            <span class="main_text2">DEVELOPER</span>
+        </div>
+        <div class="main_name">
+            <span class='main_comment'>Everyday Growing</span>
+            <span class='name'>KIM MI JIN</span>
+        </div>
+        <div class="main_footer">
+            <span><i class="fa-solid fa-computer-mouse"></i></span>
+            <span><i class="fa-solid fa-arrow-down"></i></span>
+        </div>
+    </section>
+</div>
+<!-- //main -->
+
+<!-- container -->
+<div id="container">
+    <!-- aboutme -->
+    <div class="aboutme content">
+        <section>
+            <div class="bg">
+                <div class="aboutme_img">
+                    <img src="image/aboutme_profile.png" alt="프로필사진">
+                </div>
+                <div class="aboutme_text">
+                    <div class='text_title'>ABOUT ME</div>
+                    <div class='text_comment'>스스로 문제를 찾고 해결하는 개발자, 김 미진입니다.</div>
+                    <div class="text_content">
+                        <dl>
+                            <dt>BIRTH</dt>
+                            <dd>1997 . 02</dd>
+                            <dt>PHONE</dt>
+                            <dd>010 . 2833 . 6207</dd>
+                            <dt>CHANNER</dt>
+                            <dd><a href="https://github.com/mijin970211" target="_blank">Github<i class="fa-solid fa-arrow-up"></i></a></dd>
+                            <dt>SKILL</dt>
+                            <dd>
+                                <span>HTML5<i class="fa-brands fa-html5"></i></span>
+                                <span>CSS3<i class="fa-brands fa-css3-alt"></i></span>
+                                <span>JavaScript<i class="fa-brands fa-js"></i></span>
+                                <span>React.js<i class="fa-brands fa-react"></i></span>
+                                <span>GitHub<i class="fa-brands fa-github"></i></span>
+                                <span>gh-pages<i class="fa-brands fa-github"></i></span>
+                                <span>Sass<i class="fa-brands fa-sass"></i></span>
+                                <span>Firebase<i><img src="https://w7.pngwing.com/pngs/359/1024/png-transparent-firebase-cloud-messaging-computer-icons-google-cloud-messaging-android-angle-triangle-computer-programming.png" alt="파이어베이스로고이미지"></i></span>
+                                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            </dd>
+                            <dt>Etc</dt>
+                            <dd>
+                                <span>Photoshop<i><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/1200px-Adobe_Photoshop_CC_icon.svg.png" alt="포토샵로고이미지"></i></span>
+                                <span>Figma<i><img src="data:image/png;base64,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" alt="피그마로고이미지"></i></span>
+                                <span>illustrator<i><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/1200px-Adobe_Illustrator_CC_icon.svg.png" alt="일러스트로고이미지"></i></span>
+                                <!-- <span>filezilla</span> -->
+                            </dd>
+                            <dt>education</dt>
+                            <dd>이젠아카데미컴퓨터학원 <br /><span class="dd_text">UI/UX 웹&앱 디자인 &프론트엔드 과정 수료</span></dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <p>&copy;2022 Mijin Kim All Rights Reserved.</p>
+            </div>
+        </section>
+    </div>
+    <!-- //aboutme -->
+    <!-- project1 -->
+    <div class="project content">
+        <section class="project1">
+            <div class='proInfo'>
+                <div class='info_text'>
+                    <div class='info_num'>1</div>
+                    <div class='info_type'>WEB PROJECT</div>
+                    <div class='info_type2'>Responsive Web</div>
+                    <div class='info_name'>LG ELECTRONICS</div>
+                </div>
+                <ul class="info_url">
+                    <li class="veiw_detail">
+                        Test Result
+                    </li>
+                    <li><a href="https://mijin970211.github.io/2022_lg_clone/" target="_blank">
+                        Veiw Web Site</a></li>
+                    <li><a href="https://mijin0211.github.io/webProject03/sub1.html" target="_blank">SubPage1</a></li>
+                    <li><a href="https://mijin0211.github.io/webProject03/sub2.html" target="_blank">SubPage2</a></li>
+                </ul>
+            </div>
+            <div class="datail_page">
+                <div class="detail_title">
+                    <p>TEST RESULT</p>
+                    <div class="detail_clear">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+                <div class="detail_content">
+                    <div class="detail_content_img">
+                        <img src="image/lg_html.png" alt="접근성검사html" class="img1">
+                        <img src="image/lg_css.png" alt="접근성검사css" class="img2">
+                        <img src="image/lg_pass.png" alt="접근성검사pass" class="img3">
+                    </div>
+                    <div class='detail_content_text'>
+                        <p>W3C 유효성검사 <br /> 100% PASS</p>
+                        <p class='text_small'>W3C HTML 유효성 검사와 CSS 유효성 검사 통과. <br />웹 표준 접근성에 맞게 제작되었습니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="proMockUp">
+                <div class="mockup_pc">
+                    <img src="./image/PC_MockUP_img.png" alt="데스크톱 목업 이미지">
+                    <div class="pc_img">
+                        <img src="./image/lg_PC.jpeg" alt="피씨이미지">
+                    </div>
+                </div>
+                <div class="mockup_tablet">
+                    <img src="./image/tablet_MockUp_img.png" alt="테블릿 목업 이미지">
+                    <div class="tablet_img">
+                        <img src="./image/lg_tablet.png" alt="테블릿이미지">
+                    </div>
+                </div>
+                <div class="mockup_mobile">
+                    <img src="./image/mobile_MockUp_img.png" alt="모바일 목업 이미지">
+                    <div class="mobile_img">
+                        <img src="./image/lg_mobile.png" alt="모바일이미지">
+                    </div>
+                </div>
+            </div>
+            <div class="proText">
+                <dl>
+                    <dt>Language</dt>
+                    <dd>HTML / CSS / JavaScript</dd>
+                    <dt>level of contribution</dt>
+                    <dd>100%</dd>
+                    <dt>Main Work</dt>
+                    <dd>
+                        <ul>
+                            <li>
+                                1.반응형 사이트 제작
+                                <span><b>미디어쿼리</b>를 사용해 pc,tablet,mobile 크기로 제작.</span>
+                            </li>
+                            <li>2.<b>웹표준, 웹접근성</b> 준수
+                                <span>W3C 유효성 검사완료</span>
+                            </li>
+                            <li>3.주요 기술
+                                <span><b>flexBox</b>를 사용한 레이아웃 <br> 순수 CSS와 JS를 사용한 FullDownMenu,ImageSlide<br> 서브페이지1: table 속성을 활용한 공지사항 페이지 구현 <br> 서브페이지2 : form 속성을 활용한 칭찬합니다 페이지 구현</span>
+                            </li>
+                        </ul>
+                    </dd>
+                    <dt>About Project</dt>
+                    <dd>
+                        기업 웹사이트 제작 숙련도 향상을 위한 웹사이트 클론코딩입니다.웹 콘텐츠 접근성 지침과 웹 표준을 준수한 반응형 웹사이트를 메인페이지와 서브페이지도 함께 제작하였습니다.미디어쿼리를 활용한 <b>반응형 사이트</b>로 제작하였기에 해상도에 맞기 자동으로 레이아웃이 변경됩니다.상세페이지에서 검사결과와 더 자세한 페이지를 확인하실수있습니다.
+                    </dd>
+                </dl>
+            </div>
+            <div class="footer">
+                <p>&copy;2022 Mijin Kim All Rights Reserved.</p>
+            </div>
+        </section>
+    </div>
+    <!-- //project1 -->
+    <!-- project2 -->
+    <div class="project content">
+        <section class="project2">
+            <div class='proInfo'>
+                <div class='info_text'>
+                    <div class='info_num'>2</div>
+                    <div class='info_type'>WEB PROJECT</div>
+                    <div class='info_type2'>Web Standard / Web Accessibility</div>
+                    <div class='info_name'>SAMSUNG ELECTRO-MECHANICS</div>
+                </div>
+                <ul class="info_url">
+                    <li class="veiw_detail">
+                        Test Result
+                    </li>
+                    <li><a href="https://mijin970211.github.io/2022_samsung_clone/" target="_blank">Veiw Web Site</a></li>
+                    <li><a href="https://mijin0211.github.io/webProject01/sub1.html" target="_blank">SubPage1</a></li>
+                    <li><a href="https://mijin0211.github.io/webProject01/sub2.html" target="_blank">SubPage2</a></li>
+                </ul>
+            </div>
+            <div class="datail_page">
+                <div class="detail_title">
+                    <p>TEST RESULT</p>
+                    <div class="detail_clear">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+                <div class="detail_content">
+                    <div class="detail_content_img">
+                        <img src="image/samsung_html.png" alt="접근성검사html" class="img1">
+                        <img src="image/samsung_css.png" alt="접근성검사css" class="img2">
+                        <img src="image/samsung_pass.png" alt="접근성검사pass" class="img3">
+                    </div>
+                    <div class='detail_content_text'>
+                        <p>W3C 유효성검사 <br /> 100% PASS</p>
+                        <p class='text_small'>W3C HTML 유효성 검사와 CSS 유효성 검사 통과. <br />웹 표준 접근성에 맞게 제작되었습니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="proMockUp">
+                <div class="mockup_pc">
+                    <img src="./image/PC_MockUP_img.png" alt="데스크톱 목업 이미지">
+                    <div class="pc_img">
+                        <img src="./image/samsung_PC.jpeg" alt="피씨이미지">
+                    </div>
+                </div>
+            </div>
+            <div class="proText">
+                <dl>
+                    <dt>Language</dt>
+                    <dd>HTML / CSS / JavaScript</dd>
+                    <dt>level of contribution</dt>
+                    <dd>100%</dd>
+                    <dt>Main Work</dt>
+                    <dd>
+                        <ul>
+                            <li>
+                                1.<b>웹표준, 웹접근성</b> 준수
+                                <span>W3C 유효성 검사완료</span>
+                            </li>
+                            <li>2.2개의 서브페이지 제작
+                                <span>form을 이용한 서브페이지1<br>table을 활용한 서브페이지2 제작</span>
+                            </li>
+                            <li>3.주요 기술
+                                <span><b>flexBox</b>를 사용한 레이아웃 <br> <b>scroll-event</b>를 사용한 css 움직임 구현.
+                            </li>
+                        </ul>
+                    </dd>
+                    <dt>About Project</dt>
+                    <dd>
+                        기업 웹사이트 제작 숙련도 향상을 위한 웹사이트 클론코딩입니다.웹 콘텐츠 접근성 지침과 웹 표준을 준수한 기본형 웹사이트를 메인페이지와 두개의 서브페이지를 제작하였습니다. 상세페이지에서 검사결과와 더 자세한 페이지를 확인하실수있습니다.
+                    </dd>
+                </dl>
+            </div>
+            <div class="footer">
+                <p>&copy;2022 Mijin Kim All Rights Reserved.</p>
+            </div>
+        </section>
+    </div>
+    <!-- //project2 -->
+    <!-- project3 -->
+    <div class="project content">
+        <section class="project3">
+            <div class='proInfo'>
+                <div class="info_text">
+                    <div class='info_num'>3</div>
+                    <div class='info_type'>WEB PROJECT</div>
+                    <div class='info_type2'>Responsive Web</div>
+                    <div class='info_name'>CJ ONE</div>
+                </div>
+                <ul class="info_url">
+                    <li class="veiw_detail">
+                        Test Result
+                    </li>
+                    <li><a href="https://mijin970211.github.io/2022_cjone_clone/" target="_blank">Veiw Web Site</a></li>
+                </ul>
+            </div>
+            <div class="datail_page">
+                <div class="detail_title">
+                    <p>TEST RESULT</p>
+                    <div class="detail_clear">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+                <div class="detail_content">
+                    <div class="detail_content_img">
+                        <img src="image/cjone_html.png" alt="접근성검사html" class="img1">
+                        <img src="image/cjone_css.png" alt="접근성검사css" class="img2">
+                        <img src="image/cj_pass.png" alt="접근성검사pass" class="img3">
+                    </div>
+                    <div class='detail_content_text'>
+                        <p>W3C 유효성검사 <br /> 100% PASS</p>
+                        <p class='text_small'>W3C HTML 유효성 검사와 CSS 유효성 검사 통과. <br />웹 표준 접근성에 맞게 제작되었습니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="proMockUp">
+                <div class="mockup_pc">
+                    <img src="./image/PC_MockUP_img.png" alt="데스크톱 목업 이미지">
+                    <div class="pc_img">
+                        <img src="./image/CJone_PC.jpeg" alt="피씨이미지">
+                    </div>
+                </div>
+                <div class="mockup_tablet">
+                    <img src="./image/tablet_MockUp_img.png" alt="테블릿 목업 이미지">
+                    <div class="tablet_img">
+                        <img src="./image/CJone_tablet.JPG" alt="테블릿이미지">
+                    </div>
+                </div>
+                <div class="mockup_mobile">
+                    <img src="./image/mobile_MockUp_img.png" alt="모바일 목업 이미지">
+                    <div class="mobile_img">
+                        <img src="./image/CJone_mobile.jpeg" alt="모바일이미지">
+                    </div>
+                </div>
+            </div>
+            <div class="proText">
+                <dl>
+                    <dt>Language</dt>
+                    <dd>HTML / CSS / JavaScript</dd>
+                    <dt>level of contribution</dt>
+                    <dd>100%</dd>
+                    <dt>Main Work</dt>
+                    <dd>
+                        <ul>
+                            <li>
+                                1.반응형 사이트 제작
+                                <span><b>미디어쿼리</b>를 사용해 pc,tablet,mobile 크기로 제작.</span>
+                            </li>
+                            <li>2.<b>웹표준, 웹접근성</b> 준수
+                                <span>W3C 유효성 검사완료</span>
+                            </li>
+                            <li>3.주요 기술
+                                <span>flexBox를 사용한 레이아웃 <br> 순수 CSS와 JS를 사용한 FullDownMenu, <b>AutoBanner</b>, ScrollEvent로 BackGroudImg 움직이기
+                            </li>
+                        </ul>
+                    </dd>
+                    <dt>About Project</dt>
+                    <dd>
+                        기업 웹사이트 제작 숙련도 향상을 위한 웹사이트 클론코딩입니다.웹 콘텐츠 접근성 지침과 웹 표준을 준수한 반응형 웹사이트를 메인페이지를 미디어쿼리를 활용한 <b>반응형 사이트</b>로 제작하였기에 해상도에 맞기 자동으로 레이아웃이 변경됩니다.상세페이지에서 검사결과와 더 자세한 페이지를 확인하실수있습니다.
+                    </dd>
+                </dl>
+            </div>
+            <div class="footer">
+                <p>&copy;2022 Mijin Kim All Rights Reserved.</p>
+            </div>
+        </section>
+    </div>
+    <!-- //project3 -->
+    <!-- project4 -->
+    <div class="project content">
+        <section class="project4">
+            <div class='proInfo'>
+                <div class="info_text">
+                    <div class='info_num'>4</div>
+                    <div class='info_type'>React.js App</div>
+                    <div class='info_type2'></div>
+                    <div class='info_name'>KA-TALK</div>
+                </div>
+                <ul class="info_url">
+                    <li><a onclick="windowOpen()">Veiw Web Site</a></li>
+                </ul>
+            </div>
+            <div class="proMockUp">
+                <div class="mockup_mobile">
+                    <img src="./image/mobile_MockUp_img.png" alt="모바일 목업 이미지">                   
+                    <div class="mobile_video">
+                        <video muted autoPlay loop>
+                            <source  src="video/ka_talk_video.mov">
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <div class="proText">
+                <dl>
+                    <dt>Language</dt>
+                    <dd>React.js</dd>
+                    <dt>level of contribution</dt>
+                    <dd>100%</dd>
+                    <dt>Main Work</dt>
+                    <dd>
+                        <ul>
+                            <li>
+                                1.<b>FireBase</b> 앱 개발 플랫폼 활용
+                                <span>FireBase를 활용해 로그인,로그아웃기능, sns회원가입, 메세지 남기기, 프로필변경 가능</span>
+                            </li>
+                            <li>2.<b>Scs</b>s를 사용한 스타일 구축
+                                <span>W3C 유효성 검사완료</span>
+                            </li>
+                            <li>3.react-router-dom을 사용한 <b>SPA</b>앱 구현
+                            </li>
+                            <li>4.axios,uuid 사용
+                                <span><b>axios</b>를 이용해 유저 정보API 호출</span>
+                            </li>
+                        </ul>
+                    </dd>
+                    <dt>About Project</dt>
+                    <dd>
+                        React.js와 scss를 사용해서 제작한 카카오톡 앱 클론코딩입니다. route를 사용해서 페이지 이동이 가능하며, firebase를 활용해서 로그인, 카톡 남기기, 프로필 바꾸기(이름, 사진 등)가 가능하게 제작하였습니다.상세페이지에서 더 자세한 페이지를 확인하실수있습니다.
+                    </dd>
+                </dl>
+            </div>
+            <div class="footer">
+                <p>&copy;2022 Mijin Kim All Rights Reserved.</p>
+            </div>
+        </section>
+    </div>
+    <!-- //project4 -->
+    <!-- project5 -->
+    <div class="project content">
+        <section class="project5">
+            <div class='proInfo'>
+                <div class="info_text">
+                    <div class='info_num'>5</div>
+                    <div class='info_type'>React.js App</div>
+                    <div class='info_type2'>Responsive App</div>
+                    <div class='info_name'>NETFLIX</div>
+                </div>
+                <ul class="info_url">
+                    <li><a href="https://mijin970211.github.io/2022_netflix_clone/" target="_blank">Veiw Web Site</a></li>
+                </ul>
+            </div>
+            <div class="proMockUp">
+                <div class="mockup_pc">
+                    <img src="./image/PC_MockUP_img.png" alt="데스크톱 목업 이미지">                   
+                    <div class="pc_video">
+                        <video muted autoPlay loop>
+                            <source src="video/netflix_pc_video.mov">
+                        </video>
+                    </div>
+                </div>
+                <div class="mockup_mobile">
+                    <img src="./image/mobile_MockUp_img.png" alt="모바일 목업 이미지">                   
+                    <div class="mobile_video">
+                        <video muted autoPlay loop>
+                            <source  src="video/netflix_mobile_video.mov">
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <div class="proText">
+                <dl>
+                    <dt>Language</dt>
+                    <dd>React.js</dd>
+                    <dt>level of contribution</dt>
+                    <dd>100%</dd>
+                    <dt>Main Work</dt>
+                    <dd>
+                        <ul>
+                            <li>
+                                1.FireBase 앱 개발 플랫폼 활용
+                                <span><b>FireBase</b>실시간 데이터베이스 <b>storage와 인증</b>을 통해 회원가입, sns로그인, 프로필변경, 검색창을 활용한<b>검색</b>기능</span>
+                            </li>
+                            <li>2.사용자 정의 Hook함수 사용
+                            </li>
+                            <li>
+                                3.<b>미디어쿼리</b>를 활용한 반응형 앱 제작.
+                                <span>PC, Tablet</span>
+                            </li>
+                            <li>4.react-router-dom을 사용한 <b>SPA</b>앱 구현
+                            </li>
+                            <li>5.<b>axios</b>,swiper,uuid 사용
+                                <span>axios를 이용해 영화 API 호출</span>
+                            </li>
+                        </ul>
+                    </dd>
+                    <dt>About Project</dt>
+                    <dd>
+                        영화 데이터베이스 API를 바탕으로 만든 넷플릭스 앱 클론코딩입니다. React.js와<b>styled-components</b>를 사용하였고 반응형으로 제작하여 해상도에 맞게 자동으로 레이아웃이 변경이 됩니다. 또한 firebase를 활용해서 sns로그인과 회원가입이 가능하게 만들었습니다. 상세페이지에서 더 자세한 앱을 보실수있습니다.
+                    </dd>
+                </dl>
+            </div>
+            <div class="footer">
+                <p>&copy;2022 Mijin Kim All Rights Reserved.</p>
+            </div>
+        </section>
+    </div>
+    <!-- //project5 -->
+    <!-- project6 -->
+    <div class="project content">
+        <section class="project6">
+            <div class='proInfo'>
+                <div class="info_text">
+                    <div class='info_num'>6</div>
+                    <div class='info_type'></div>
+                    <div class='info_type2'></div>
+                    <div class='info_name'>PURE CSS</div>
+                </div>
+            </div>
+            <div class="proMockUp">
+                <div class="ryan">
+                    <div class="ear"></div>
+                    <div class="face">
+                        <div class="eyebrows_right"></div>
+                        <div class="eyebrows_left"></div>
+                        <div class="eyes_right"></div>
+                        <div class="eyes_left"></div>
+                        <div class="nose"></div>
+                        <div class="mouth"></div>
+                    </div>
+                </div>
+                <div class="robot">
+                    <div class="back"></div>
+                    <div class="hair"></div>
+                    
+                    <div class="head">
+                        <div class="eyes"></div>
+                        <div class="mouse_close"></div>
+                        <div class="mouse_open"></div>
+                        <div class="ear"></div>
+                    </div>
+
+                    <div class="body"></div>
+                </div>
+                <div class="emogi"></div>
+            </div>
+            <div class="proText">
+                <dl>
+                    <dt>Language</dt>
+                    <dd>css</dd>
+                    <dt>level of contribution</dt>
+                    <dd>100%</dd>
+                    <dt>Main Work</dt>
+                    <dd>
+                        <ul>
+                            <li>
+                                다양한 css속성을 활용한 캐릭터 애니메이션
+                                <span>로보트 : 호버시 움직이는 효과 <br>라이언 : 애니메이션을 이용한 자동움직임</span>
+                            </li>
+                        </ul>
+                    </dd>
+                    <dt>About Project</dt>
+                    <dd>
+                        오로지 css로만 만든 캐릭터 입니다. 애니메이션 효과를 넣어 움직이게끔 만들었습니다.
+                    </dd>
+                </dl>
+            </div>
+            <div class="footer">
+                <p>&copy;2022 Mijin Kim All Rights Reserved.</p>
+            </div>
+        </section>
+    </div>
+    <!-- //project6 -->
+    <!-- contact -->
+    <div class="content">
+        <section class="contact">
+            <div class='contact_title'>CONTACT</div>
+            <div class="contact_text">
+                <div class="contact_info">
+                    <div class='info_contact'>
+                        <div class='info_title'><i class="fa-solid fa-phone"></i>PHONE</div>
+                        <div class='info_content'>010 - 2833 - 6207</div>
+                    </div>
+                    <div class='info_contact'>
+                        <div class='info_title'><i class="fa-solid fa-envelope"></i>E-MAIL</div>
+                        <div class='info_content'>kkkmj28@naver.com</div>
+                    </div>
+                    <div class='info_contact'>
+                        <div class='info_title'>CHANNEL</div>
+                        <div class='info_content'>
+                            <a href="https://github.com/mijin970211"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact_footer">
+                <div class="track">
+                    <div class="contact_footer_content">&nbsp;THANK YOU&nbsp;THANK YOU&nbsp;THANK YOU&nbsp;THANK YOU&nbsp;THANK YOU&nbsp;THANK YOU
+                    </div>
+                    <div class="contact_footer_content_small">&nbsp;THANK YOU&nbsp;THANK YOU&nbsp;THANK YOU&nbsp;THANK YOU&nbsp;THANK YOU&nbsp;THANK YOU&nbsp;THANK YOU&nbsp;THANK YOU&nbsp;THANK YOU&nbsp;THANK YOU&nbsp;THANK YOU&nbsp;THANK YOU&nbsp;THANK YOU&nbsp;THANK YOU&nbsp;THANK YOU&nbsp;THANK YOU&nbsp;THANK YOU&nbsp;THANK YOU&nbsp;THANK YOU&nbsp;THANK YOU&nbsp;THANK YOU&nbsp;THANK YOU&nbsp;THANK YOU&nbsp;THANK YOU&nbsp;THANK YOU
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <p>&copy;2022 Mijin Kim All Rights Reserved.</p>
+            </div>
+        </section>
+    </div>
+    <!-- //contact -->
+</div>
+<!-- //container -->
+</body>
+</html>

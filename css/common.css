@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* 
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Roboto', sans-serif;
+ */
+/* *{
+    cursor: none;
+} */
+
+body{
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    background: #222;
+    color: #f9f9f9;
+    overflow-x: hidden;
+}
+a{text-decoration: none; color: #f9f9f9;}
+section{
+    width: 100vw;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+::-webkit-scrollbar {
+    display: none; /* 크롬, 사파리, 오페라, 엣지 */
+}
+.circle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    left: 50%;
+    margin: -50px 0 0 -50px;
+    background: #f9f9f9;
+    border-radius: 80%;
+    backface-visibility: hidden;
+    z-index: 200000;
+  }
+  .circle_line{
+    position: absolute;    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50px;
+    height: 50px;
+    border: 1px solid #f9f9f9;
+    border-radius: 50%;
+    animation:circle_move 5s linear 0s infinite alternate;
+  }
+  @keyframes circle_move {
+    0%{    width: 70px;
+        height: 70px;}
+    50%{    width: 30px;
+        height: 30px;}
+    100%{    width: 50px;
+        height: 50px;}
+  }
