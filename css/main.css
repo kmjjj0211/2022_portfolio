@@ -125,6 +125,7 @@
       background-position: 500%;
     }
   }
+
 /* main */
 .main>section{
     position: relative;
@@ -183,6 +184,9 @@
 .main.on>section>.main_text{
     opacity: 1;
 }
+.main>section>.main_text>.main_text1{
+    text-align: center;
+}
 .main>section>.main_text>.main_text1:hover{
     text-shadow: -2px 0 #222, 0 2px #222, 2px 0 #222, 0 -2px #222;
     color: #FAC642;
@@ -212,7 +216,7 @@
 .main>section>.main_name>.main_comment{
     position: absolute;left: -30%; bottom: 250%;
     display: block;
-    width: 200%;
+    width: 250%;
     text-shadow: 2px 2px 2px rgba(255,255,255,0.7);
 }
 .main>section>.main_name>.name{
